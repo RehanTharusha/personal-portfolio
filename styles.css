@@ -37,9 +37,9 @@
 .textContainer p{
     font-size: 20px;
     font-family: 'Urbanist', sans-serif;
-    text-shadow: -10px 15px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: -10px 15px 20px rgba(0, 0, 0, 0.3);
     margin-left: 10px;
-
+    margin-bottom: 1vh;
 }
 
 
@@ -66,4 +66,48 @@
 
 .social li a:hover {
     transform: scale(0.5) translateY(-15px);
+}
+
+@media (max-width: 1024px){
+    .container{
+        
+        /* justify-content: flex-start; */
+        
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img{
+       width: 10vh;
+    }
+
+    .textContainer h1{
+        font-size: 8rem;
+        text-align:center;
+
+    }
+
+    .textContainer p{
+        text-align: center;
+    }
+
+    .socials-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social img{
+        width: 5vh;
+    }
+
+
+
+
+
+
+
 }

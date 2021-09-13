@@ -93,6 +93,7 @@
 
     .textContainer p{
         text-align: center;
+        font-size: 30px;
     }
 
     .socials-container{
@@ -101,7 +102,7 @@
     }
 
     .social img{
-        width: 5vh;
+        width: 7vh;
     }
 
 

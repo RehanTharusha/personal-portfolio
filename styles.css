@@ -236,9 +236,26 @@
     }
 
 
+    .links-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .project-button{
+        margin: 0;
+    }
 
+    .social li a {
+        margin: 0;
+        padding: 0;
+    }
 
+    .divider{
+        margin-top: 6vh;
+    }
 
-
+    .card{
+        padding-bottom: 2vh;
+    }
 }

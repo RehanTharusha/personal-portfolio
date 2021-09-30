@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="671" height="187" viewBox="0 0 671 187">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 200px;
+        text-anchor: middle;
+        font-family: Gotham;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+        fill: #08fdd8;
+      }
+
+      .cls-2 {
+        fill: #6050dc;
+      }
+    </style>
+    <filter id="filter" x="-8" y="-11" width="685" height="199" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-7" dy="12.124" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4.899"/>
+      <feFlood result="flood" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="Rehan." class="cls-1" x="339.16" y="147.89"><tspan x="339.16">Rehan.</tspan></text>
+  <text id="Rehan.-2" data-name="Rehan." class="cls-2" x="346.16" y="145.89"><tspan x="346.16">Rehan.</tspan></text>
+</svg>

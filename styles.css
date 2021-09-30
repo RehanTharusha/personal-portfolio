@@ -83,6 +83,10 @@
     display: none;
 }
 
+.photography-container{
+    display: none;
+}
+
 
 .divider{
     border: solid black 1px;
@@ -117,7 +121,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 1000px;
 }
 
 .projects-nav{
@@ -201,6 +204,21 @@
 
 /* End of styling for project display section */
 
+    .photo-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 350px;
+        margin: auto;
+        box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.2);
+        /* padding: 2vh; */
+        transition: 0.5s;
+        /* border: black solid 4px; */
+    }
+    
+    .photo-card:hover{
+        max-width: 400px;
+    }
 
 
 @media (max-width: 1024px){

@@ -1,72 +1,31 @@
-var projectButtonActive = document.getElementById('projectButton');
-var photographyButtonActive = document.getElementById('photographyButton');
-var projectContainerRun = document.getElementById('projectContainer');
-var photoContainerRun = document.getElementById('photographyContainer');
-var imageSlideshow = document.getElementById('image-slideshow-container');
+var sunnySideMobile = document.getElementById("sunny-side-mobile");
+var sunnySideDesktop = document.getElementById("sunny-side-desktop");
+var sunnySideDesktopBackground = document.getElementById("item-3-desktop");
+var sunnySideMobileBackground = document.getElementById("item-3-mobile");
 
 
-projectButtonActive.addEventListener('click', showProjectContainer);
-photographyButtonActive.addEventListener('click', showPhotoContainer);
+sunnySideMobile.addEventListener('click', mobileMode);
+sunnySideDesktop.addEventListener('click', desktopMode);
 
-function showProjectContainer(){
-    imageSlideshow.style.display = 'none';
-
-    if (photoContainerRun.style.display = 'block') {
-        photoContainerRun.style.display = 'none';
-    }
-
-    projectContainerRun.style.display = 'block';
-
-
-};
-
-function showPhotoContainer(){
-    imageSlideshow.style.display = 'none';
-
-    if (projectContainerRun.style.display = 'block') {
-        projectContainerRun.style.display = 'none';
-    }
-
-    photoContainerRun.style.display = 'block';
-
+function mobileMode(){
     
+    sunnySideDesktopBackground.style.display = 'none';
+
+    sunnySideMobileBackground.style.display = 'block';
 };
 
+function desktopMode(){
+    
+    sunnySideDesktopBackground.style.display = 'block';
 
-//This is the javascript for the home page image slideshow.
+    sunnySideMobileBackground.style.display = 'none';
+};
 
-var index = 0;
-
-show_slide = (i) => {
-  //increment/decrement slide index
-  index += i;
-
-  //grab all the images
-  var images = document.getElementsByClassName("image");
-  //grab all the dots
-  var dots = document.getElementsByClassName("dot");
-
-  // hide all the images
-  for (i = 0; i < images.length; i++) 
-    images[i].style.display = "none";
-  
-  // remove the active class from the dot
-  for (i = 0; i < dots.length; i++) 
-    dots[i].className = dots[i].className.replace(" active", "");
-  
-  // if index is greater than the amount of images (set it to zero)
-  if (index > images.length - 1) 
-    index = 0 ;
-  
-  // if index is less than zero (set it to the length of images)
-  if (index < 0)
-    index = images.length - 1;
-
-  // only display the image that's next or previous
-  images[index].style.display = "block";
-  // only make the current dot active
-  dots[index].className += " active";
-
-}
-
-window.addEventListener("onload", show_slide(index));
+window.onscroll = function(ev) {
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+        // you're at the bottom of the page
+        document.getElementById('navbarSocials').style.opacity='0';
+    }else{
+        document.getElementById('navbarSocials').style.animation = 'opacityChange 3s';
+    };
+};

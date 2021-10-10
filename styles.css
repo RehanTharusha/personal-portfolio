@@ -341,13 +341,18 @@ body{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
 }
 
 .skills p{
     max-width: 250px;
+    margin-bottom: 2vh;
 }
 
+#skill-icon{
+    font-size: 60px;
+}
 
 .numbering{
     display: inline-block;
@@ -562,6 +567,10 @@ body{
         padding: 10vh;
      }
 
+    .mobile-contact-form-text{
+        display: none;
+    }
+
     .contact-form-text { 
         grid-area: 3 / 1 / 4 / 2;
         text-align: left;
@@ -670,69 +679,3 @@ body{
 
 
 
-
-@media (max-width: 1024px){
-        
-    .form-background{
-        margin-bottom: 20vh;
-    }
-
-}
-
-
-@media (max-width: 1024px){
-
-    .flex-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image img{
-       width: 10vh;
-    }
-
-    .textContainer h1{
-        font-size: 8rem;
-        text-align:center;
-
-    }
-
-    .textContainer p{
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .socials-container{
-        display: flex;
-        justify-content: center;
-    }
-
-    .social img{
-        width: 7vh;
-    }
-
-
-    .links-container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .project-button{
-        margin: 0;
-    }
-
-    .social li a {
-        margin: 0;
-        padding: 0;
-    }
-
-    .divider{
-        margin-top: 6vh;
-    }
-
-    .card{
-        padding-bottom: 2vh;
-    }
-}

@@ -40,6 +40,7 @@
     <link rel="icon" type="image/png" href="Images/favicon.png" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobileStyles.css">
     <!-- <link rel="stylesheet" href="mobileStyles.css"> -->
     
     <title>Rehan Tharusha | Front End Web Developer & Designer</title>
@@ -148,22 +149,22 @@
                     
                     <ul class="skills">
                         <li> 
-                           <i style="font-size: 60px;" id="skill-icon" class="fas fa-tachometer-alt"></i>
+                           <i id="skill-icon" class="fas fa-tachometer-alt"></i>
                            <h2>Fast</h2>
                            <p>Fast load times and lag free interaction, my highest priority.</p>
                         </li>
                        <li> 
-                           <i style="font-size: 60px;" id="skill-icon" class="fas fa-mobile"></i>
+                           <i id="skill-icon" class="fas fa-mobile"></i>
                            <h2>Responsive</h2>
                            <p>My layouts will work on any device, big or small.</p>
                         </li>
                        <li> 
-                           <i style="font-size: 60px;" id="skill-icon" class="far fa-lightbulb"></i>
+                           <i id="skill-icon" class="far fa-lightbulb"></i>
                            <h2>Great Designs</h2>
                            <p>Strong preference for easy to use, intuitive UX/UI.</p>
                         </li>
                        <li> 
-                           <i style="font-size: 60px;" id="skill-icon" class="fas fa-rocket"></i>
+                           <i id="skill-icon" class="fas fa-rocket"></i>
                            <h2>Dynamic</h2>
                            <p>Websites don't have to be static, I love making pages come to life.</p>
                         </li>
@@ -192,8 +193,8 @@
                         </div>
 
                         <div class="icon-container">
-                            <i style="font-size: 30px;" class="fas fa-mobile"></i>
-                            <i style="font-size: 30px;" class="fas fa-laptop"></i>
+                            <i style="font-size: 30px;" class="fas fa-mobile" id="sunny-side-mobile"></i>
+                            <i style="font-size: 30px;" class="fas fa-laptop" id="sunny-side-desktop"></i>
                         </div>
                         
                     </div>
@@ -222,43 +223,60 @@
 
     
                     </div>
-                    <div class="contact-form-grid-container" id="contact"> 
-                        <div class="sign-up-container">
 
+                            <div class="mobile-contact-form-text">
+                                <h1 class="outline">Lets Get In Touch!</h2>
+                                <p>I’m interested in freelance or work opportunities – especially ambitious small to large scale projects. <br> However, if you have any other kind of request or question, please don’t hesitate to use the form.</p>
 
-                                <div class="form-background">
+                                <p style="font-family: 'Roboto Mono', monospace; padding: 0;">Other ways to contact me. My DMs are always open.</p>
                         
-                                    <section class="signup-form">
-                                        <form action="https://formsubmit.co/rehantharusha@gmail.com" method="POST">
-                                            <p style="font-family: 'Roboto Mono', monospace;">Contact Form</p>
-                                            <div class="input">
-                                                <input type="text" name="name" placeholder="Enter your name here." required>
-                                                <input type="email" name="email" placeholder="Enter your email." required>
-                                                <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                                                <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-                                                <input type="hidden" name="_autoresponse" value="your custom message">
-                                                <button type="submit">Send</button>
-                                            </div>
-                                        </form>
-                                    </section>
-                                </div>
-                
+                                <ul class="social contact"> 
+                                    <li><a href="https://twitter.com/rehantharusha"><img src="Images/twitter.png" alt="twitter"></a></li>
+                                    <li><a href="https://github.com/RehanTharusha"><img src="Images/github.png" alt="github"></a></li>                
+                                    <li><a href="https://github.com/RehanTharusha"><img src="Images/instagram.png" alt="github"></a></li>                
+                                </ul>
                             </div>
-                         </div>
 
-                        <div class="contact-form-text">
-                            <h1 class="outline">Lets Get In Touch!</h2>
-                            <p>I’m interested in freelance or work opportunities – especially ambitious small to large scale projects. <br> However, if you have any other kind of request or question, please don’t hesitate to use the form.</p>
 
-                            <p style="font-family: 'Roboto Mono', monospace; padding: 0;">Other ways to contact me. My DMs are always open.</p>
-                    
-                            <ul class="social contact"> 
-                                <li><a href="https://twitter.com/rehantharusha"><img src="Images/twitter.png" alt="twitter"></a></li>
-                                <li><a href="https://github.com/RehanTharusha"><img src="Images/github.png" alt="github"></a></li>                
-                                <li><a href="https://github.com/RehanTharusha"><img src="Images/instagram.png" alt="github"></a></li>                
-                            </ul>
-                        </div>
-                    </div>
+                            <div class="contact-form-grid-container" id="contact"> 
+                                <div class="sign-up-container">
+
+
+                                        <div class="form-background">
+                                            <section class="signup-form">
+
+                                                <form action="https://formsubmit.co/rehantharusha@gmail.com" method="POST">
+                                                    <p style="font-family: 'Roboto Mono', monospace;">Contact Form</p>
+                                                    <div class="input">
+                                                        <input type="text" name="name" placeholder="Enter your name here." required>
+                                                        <input type="email" name="email" placeholder="Enter your email." required>
+                                                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                                                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                                                        <input type="hidden" name="_autoresponse" value="your custom message">
+                                                        <button type="submit">Send</button>
+                                                    </div>
+                                                </form>
+
+                                            </section>
+                                        </div>
+                        
+                                    </div>
+                            </div>
+
+                            <div class="contact-form-text">
+                                <h1 class="outline">Lets Get In Touch!</h2>
+                                <p>I’m interested in freelance or work opportunities – especially ambitious small to large scale projects. <br> However, if you have any other kind of request or question, please don’t hesitate to use the form.</p>
+
+                                <p style="font-family: 'Roboto Mono', monospace; padding: 0;">Other ways to contact me. My DMs are always open.</p>
+                        
+                                <ul class="social contact"> 
+                                    <li><a href="https://twitter.com/rehantharusha"><img src="Images/twitter.png" alt="twitter"></a></li>
+                                    <li><a href="https://github.com/RehanTharusha"><img src="Images/github.png" alt="github"></a></li>                
+                                    <li><a href="https://github.com/RehanTharusha"><img src="Images/instagram.png" alt="github"></a></li>                
+                                </ul>
+                            </div>
+
+            </div><!--End of the parent container-->
 
 
                     <footer>
@@ -269,7 +287,6 @@
                         footer{
                             padding: 6vh;
                             text-align: center;
-                            /* background: #1B242F; */
                             background: black;
                         }
 

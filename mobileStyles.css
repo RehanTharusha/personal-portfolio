@@ -1,0 +1,99 @@
+
+@media (max-width: 720px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links-container{
+        display: none;
+    }
+
+    .textContainer h1{
+        font-size: 3rem;
+    }
+
+    .text-flex-container {
+        margin-left: 2vh;
+    }
+
+    .skills h2{
+        font-size: 1.3rem;
+    }
+
+    #skill-icon{
+        font-size: 30px;
+    }
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+        padding: 6vh;
+    }
+
+            .item-1{
+                text-align: left;
+                padding: 0;
+                padding-bottom: 40px;
+            }
+
+            .item-1 h1{
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                margin-top: 10%;
+                margin-bottom: 10%;
+                font-size: 2em;
+            }
+
+            .item-1 p{
+                line-height: 25px;
+                font-family: 'Barlow', sans-serif;
+                color: hsl(167, 40%, 24%);
+                padding-bottom: 10%;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .item-2-desktop{
+                background-image: url(Images/ProjectImages/prime-designs\ -desktop.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                height: 624px;
+                width: 100%;
+                margin: 0;
+            }
+
+    .contact-form-text{
+        display: none;
+    }
+
+    .mobile-contact-form-text{
+        display: block;
+    }
+
+    .mobile-contact-form-text { 
+        text-align: left;
+        padding: 25% 0;
+        padding-bottom: 1vh;
+        max-width: 600px;
+        }
+
+
+    .mobile-contact-form-text h1{
+        font-size: 3rem;
+        color: #F0F0F0;
+        font-family: 'Maven Pro', sans-serif;
+        display: inline-block;
+        font-weight: 700;
+        margin-bottom: 10%;
+    }
+
+    .mobile-contact-form-text p{
+        line-height: 25px;
+        font-family: 'Barlow', sans-serif;
+        color: hsl(167, 40%, 24%);
+        padding-bottom: 10%;
+    }
+}

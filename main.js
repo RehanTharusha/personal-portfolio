@@ -20,12 +20,3 @@ function desktopMode(){
 
     sunnySideMobileBackground.style.display = 'none';
 };
-
-window.onscroll = function(ev) {
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        // you're at the bottom of the page
-        document.getElementById('navbarSocials').style.opacity='0';
-    }else{
-        document.getElementById('navbarSocials').style.animation = 'opacityChange 3s';
-    };
-};

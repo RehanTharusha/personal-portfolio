@@ -44,6 +44,9 @@ body{
     display: none;
 }
 
+.about-section{
+    display: none;
+}
 
 .container {
     /* margin-top: 10vh; */
@@ -564,5 +567,13 @@ body{
                 letter-spacing: 1px;
             }
 
+footer{
+    padding: 6vh;
+    text-align: center;
+    background: black;
+}
 
+footer p{
+    color: white;
+}
 

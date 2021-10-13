@@ -40,6 +40,7 @@
     <link rel="icon" type="image/png" href="Images/favicon.png" />
 
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="AboutPageStyles.css">
     <link rel="stylesheet" href="mobileStyles.css">
     <!-- <link rel="stylesheet" href="mobileStyles.css"> -->
     
@@ -47,9 +48,9 @@
 </head>
 
 
-<body>
+<body id="homepage-content">
  
-<div class="container" id="home">  
+<div class="container">  
     
 
         <div class="links-container" >
@@ -61,10 +62,10 @@
                     <h1 class="name">Rehan <br><span style="margin-left: 0.5vh;"></span> Tharusha</h1>
 
                     <ul class="nav">
-                        <li><a href="#home">Home</a></li>
+                        <li><a onclick="homePageActivate()" href="#home">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="https://rehantharusha.hashnode.dev/">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a onclick="aboutPageToggle()" href="#about-section">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
 
@@ -80,7 +81,7 @@
         </div>
 
 
-    <div class="section-two">
+    <div class="section-two" id="home">
         <div class="textContainer">
             <div class="text-flex-container">
                 <h1><span style="font-size: 2rem; font-family: 'jenthillregular';">👋Hi Im Rehan</span></h1>
@@ -322,9 +323,89 @@
                     </style>
             </div>
         </div>
+
+
+        <div class="about-section" id="about-section">
+
+            <div class="about-background">
+    
+
+                <div class="about-container">
+        
+                    <img src="Images/logo.png" alt="" class="about-logo">
+        
+                    <h1>About Me</h1>
+                    <p>👋Hi, I'm Rehan Tharusha</p>
+
+                   <p>I'm a front end developer who loves creating beautiful UI and loves a challenging experience while working with positive people. </p>
+
+                   <p>I'm a well-organised person and a problem solver with a high attention to detail. I'm also very passionate about art, photography & filmmaking.</p>
+                
+                   <a class="contact-button" href="#aboutpage-contact">Contact Me</a>
+                </div>
+        
+                    
+            </div>
+
+            <div class="contact-form-grid-container" id="aboutpage-contact">
+
+                <div class="mobile-contact-form-text">
+                    <h1 class="outline">Lets Get In Touch!</h2>
+                    <p>I’m interested in freelance or work opportunities – especially ambitious small to large scale projects. <br> However, if you have any other kind of request or question, please don’t hesitate to use the form.</p>
+    
+                    <p style="font-family: 'Roboto Mono', monospace; padding: 0;">Other ways to contact me. My DMs are always open.</p>
+            
+                    <ul class="social contact"> 
+                        <li><a href="https://twitter.com/rehantharusha"><img src="Images/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://github.com/RehanTharusha"><img src="Images/github.png" alt="github"></a></li>                
+                        <li><a href="https://github.com/RehanTharusha"><img src="Images/instagram.png" alt="github"></a></li>                
+                    </ul>
+                </div>
+    
+                <div class="contact-form-text">
+                    <h1 class="outline">Lets Get In Touch!</h2>
+                    <p>I’m interested in freelance or work opportunities – especially ambitious small to large scale projects. <br> However, if you have any other kind of request or question, please don’t hesitate to use the form.</p>
+    
+                    <p style="font-family: 'Roboto Mono', monospace; padding: 0;">Other ways to contact me. My DMs are always open.</p>
+            
+                    <ul class="social contact"> 
+                        <li><a href="https://twitter.com/rehantharusha"><img src="Images/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://github.com/RehanTharusha"><img src="Images/github.png" alt="github"></a></li>                
+                        <li><a href="https://github.com/RehanTharusha"><img src="Images/instagram.png" alt="github"></a></li>                
+                    </ul>
+                </div>
+    
+                <div class="sign-up-container">
+    
+    
+                        <div class="form-background">
+                            <section class="signup-form">
+    
+                                <form action="https://formsubmit.co/rehantharusha@gmail.com" method="POST">
+                                    <p style="font-family: 'Roboto Mono', monospace;">Contact Form</p>
+                                    <div class="input">
+                                        <input type="text" name="name" placeholder="Enter your name here." required>
+                                        <input type="email" name="email" placeholder="Enter your email." required>
+                                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                                        <input type="hidden" name="_autoresponse" value="your custom message">
+                                        <button type="submit">Send</button>
+                                    </div>
+                                </form>
+    
+                            </section>
+                        </div>
+        
+                    </div>
+    
+                
+    </div>
+        </div>
 </div>
 
+<script src="main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
 </body>
+
+</html>

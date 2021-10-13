@@ -407,14 +407,6 @@ body{
                 backface-visibility: hidden;
             }
 
-            .box:hover img{
-                opacity: 0.3;
-            }
-
-            .box:hover .box-text{
-                opacity: 1;
-            }
-
             .box-text{
                 transition: .5s ease;
                 opacity: 0;
@@ -443,8 +435,16 @@ body{
                 transition: 0.5s;
                 border-radius: 100000px;
             }
-  
 
+            .box:hover img{
+                opacity: 0.3;
+            }
+
+            .box:hover .box-text{
+                opacity: 1;
+            }
+  
+            
 
     .contact-form-grid-container{ 
         display: grid;

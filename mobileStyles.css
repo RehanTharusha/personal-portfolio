@@ -63,6 +63,9 @@
             grid-template-rows: repeat(2, 1fr);
         }
 
+        .box-text:hover{
+            opacity: 1;
+        }
 
     .contact-form-grid-container{
         display: grid;

@@ -13,6 +13,7 @@
             bottom: 0;
             width: 100%;
             padding: 1.3vh;
+            border-radius: 10px;
         }
 
         .mobile-navbar-content{
@@ -45,10 +46,6 @@
         height: 92vh;
     }
 
-    .textContainer h1{
-        font-size: 3rem;
-    }
-
     .text-flex-container {
         margin-left: 2vh;
     }
@@ -61,44 +58,22 @@
         font-size: 30px;
     }
 
-    .parent{
-        display: flex;
-        flex-direction: column;
-        padding: 6vh;
+        .project-grid{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+
+    .contact-form-grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+        padding-left: 2vh;
     }
-
-            .item-1{
-                text-align: left;
-                padding: 0;
-                padding-bottom: 40px;
-            }
-
-            .item-1 h1{
-                font-family: 'Fraunces', serif;
-                font-weight: 700;
-                margin-top: 10%;
-                margin-bottom: 10%;
-                font-size: 2em;
-            }
-
-            .item-1 p{
-                line-height: 25px;
-                font-family: 'Barlow', sans-serif;
-                color: hsl(167, 40%, 24%);
-                padding-bottom: 10%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .item-2-desktop{
-                background-image: url(Images/ProjectImages/prime-designs\ -desktop.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                height: 624px;
-                width: 100%;
-                margin: 0;
-            }
 
     .contact-form-text{
         display: none;
@@ -113,7 +88,7 @@
         padding: 25% 0;
         padding-bottom: 1vh;
         max-width: 600px;
-        }
+    }
 
 
     .mobile-contact-form-text h1{
@@ -134,5 +109,12 @@
 
     footer{
         margin-bottom: 7vh;
+    }
+}
+
+@media (max-width: 720px){
+    .project-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }

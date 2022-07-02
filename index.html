@@ -62,8 +62,8 @@
                     <h1 class="name">Rehan <br><span style="margin-left: 0.5vh;"></span> Tharusha</h1>
 
                     <ul class="nav">
-                        <li><a onclick="homePageActivate()" href="#home">Home</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a onclick="homePageActivate()" href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
                         <li><a href="https://rehantharusha.hashnode.dev/">Blog</a></li>
                         <li><a onclick="aboutPageToggle()" href="#about-section">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -208,56 +208,47 @@
                 </div>
 
                 <div class="project-grid">
-                        <div class="box">
+                        <div class="project-grid-box">
                             <img src="Images/ProjectImages/prime-designs-page.jpg" alt="">
-                            <div class="box-text">
+                            <div class="project-grid-box-text">
                                 <h1>Prime Designs Ecommerce Store.</h1>
 
                                 <a href="https://prime-designs-store.000webhostapp.com/">Visit Project</a>
                             </div>
                         </div>
 
-                        <div class="box">
+                        <div class="project-grid-box">
                             <img src="Images/ProjectImages/desktop-preview.jpg" alt="">
-                            <div class="box-text">
+                            <div class="project-grid-box-text">
                                 <h1>SunnySide Agency Landing Page.</h1>
 
                                 <a href="https://rehantharusha.github.io/sunny-side-landing-page-challenge/">Visit Project</a>
                             </div>
                         </div>
 
-                        <div class="box">
+                        <div class="project-grid-box">
                             <img src="Images/ProjectImages/video-landingpage.jpg" alt="">
-                            <div class="box-text">
+                            <div class="project-grid-box-text">
                                 <h1>Landing Page with a Video Background.</h1>
 
                                 <a href="https://rehantharusha.github.io/video-landingpage.github.io/">Visit Project</a>
                             </div>
                         </div>
 
-                        <div class="box">
-                            <img src="Images/ProjectImages/responsive-banner-design.jpg" alt="">
-                            <div class="box-text">
-                                <h1>Responsive Banner Design. (FrontEnd Mentor)</h1>
 
-                                <a href="https://rehantharusha.github.io/video-landingpage.github.io/">Visit Project</a>
-                            </div>
-                        </div>
-
-                        <div class="box">
-                            <img src="Images/ProjectImages/random-quote-generator.jpg" alt="">
-                            <div class="box-text">
-                                <h1>Random Quote Generator. (JavaScript App)</h1>
-
-                                <a href="https://rehantharusha.github.io/JS-Practice-2-Random-Quote-Generator/">Visit Project</a>
-                            </div>
-                        </div>
-
-                    
 
                 </div>
 
+                <div class="projects-call-to-action">
+                </div>
 
+
+                <style>
+                    .projects-call-to-action{
+                        width: 100%;
+                        height: 10vh;
+                    }
+                </style>
 <div class="contact-form-grid-container" id="contact">
 
             <div class="mobile-contact-form-text">
@@ -328,7 +319,7 @@
                         }
                     </style>
             </div>
-        </div>
+    </div>
 
 
         <div class="about-section" id="about-section">
@@ -408,6 +399,30 @@
                 
     </div>
         </div>
+
+        <!-- <style>
+            #home{
+                display: none;
+            }
+
+            .loading-gif{
+                display: flex;
+                justify-content: center;
+                align-items:center ;
+                height: 100vh;
+            }
+
+            .the-gif{
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+
+        <div class="loading-gif" id="loading-gif">
+            <div class="loading-gif-bcakground">
+                <img class="the-gif" src="Images\cat-gif.gif" alt="">
+            </div>
+        </div> -->
 </div>
 
 <script src="main.js"></script>

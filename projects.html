@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="AboutPageStyles.css" /> -->
+    <link rel="stylesheet" href="mobileStyles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="links-container">
+        <div class="links-static" id="theStaticThing">
+          <!-- <img style="padding: 2vh; width: 80px;" src="Images/R-logo.png" alt=""> -->
+
+          <h1 class="name">
+            Rehan <br /><span style="margin-left: 0.5vh"></span> Tharusha
+          </h1>
+
+          <ul class="nav">
+            <li><a onclick="homePageActivate()" href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="https://rehantharusha.hashnode.dev/">Blog</a></li>
+            <li>
+              <a onclick="aboutPageToggle()" href="#about-section">About</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <ul class="social" id="navbarSocials">
+            <li>
+              <a href="https://twitter.com/rehantharusha"
+                ><img src="Images/twitter.png" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/RehanTharusha"
+                ><img src="Images/github.png" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/RehanTharusha"
+                ><img src="Images/instagram.png" alt="github"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div class="project-grid">
+      
+        <div class="project-grid-box">
+          <img src="Images/ProjectImages/prime-designs-page.jpg" alt="" />
+          <div class="project-grid-box-text">
+            <h1>Prime Designs Ecommerce Store.</h1>
+
+            <a href="https://prime-designs-store.000webhostapp.com/"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+
+      <div class="project-grid-box">
+        <img src="Images/ProjectImages/desktop-preview.jpg" alt="" />
+        <div class="project-grid-box-text">
+          <h1>SunnySide Agency Landing Page.</h1>
+
+          <a
+            href="https://rehantharusha.github.io/sunny-side-landing-page-challenge/"
+            >Visit Project</a
+          >
+        </div>
+      </div>
+
+      <div class="project-grid-box">
+        <img src="Images/ProjectImages/video-landingpage.jpg" alt="" />
+        <div class="project-grid-box-text">
+          <h1>Landing Page with a Video Background.</h1>
+
+          <a href="https://rehantharusha.github.io/video-landingpage.github.io/"
+            >Visit Project</a
+          >
+        </div>
+      </div>
+
+      <div class="project-grid-box">
+        <img src="Images/ProjectImages/responsive-banner-design.jpg" alt="" />
+        <div class="project-grid-box-text">
+          <h1>Responsive Banner Design. (FrontEnd Mentor)</h1>
+
+          <a href="https://rehantharusha.github.io/video-landingpage.github.io/"
+            >Visit Project</a
+          >
+        </div>
+      </div>
+
+      <div class="project-grid-box">
+        <img src="Images/ProjectImages/random-quote-generator.jpg" alt="" />
+        <div class="project-grid-box-text">
+          <h1>Random Quote Generator. (JavaScript App)</h1>
+
+          <a
+            href="https://rehantharusha.github.io/JS-Practice-2-Random-Quote-Generator/"
+            >Visit Project</a
+          >
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <style>
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      justify-items: stretch;
+      align-items: stretch;
+    }
+
+    .project-grid-box {
+      padding: 4vh;
+      position: relative;
+      text-align: center;
+      box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-grid-box img {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+
+    .project-grid-box-text {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .project-grid-box-text h1 {
+      font-size: 20px;
+      margin-bottom: 4vh;
+    }
+
+    .project-grid-box-text a {
+      font-size: 10px;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      padding: 15px 30px;
+      text-decoration: none;
+      color: white;
+      background-color: #314b40;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: 0.5s;
+      border-radius: 100000px;
+    }
+
+    .project-grid-box:hover img {
+      opacity: 0.3;
+    }
+
+    .project-grid-box:hover .project-grid-box-text {
+      opacity: 1;
+    }
+  </style>
+</html>

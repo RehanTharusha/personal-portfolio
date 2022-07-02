@@ -1,23 +1,16 @@
+"use strict";
 
-function aboutPageToggle(){
+const mainContent = document.getElementById("home");
+const aboutPage = document.getElementById("about-section");
 
-    var mainContent = document.getElementById("home");
-    var aboutPage = document.getElementById("about-section");
+function aboutPageToggle() {
+  mainContent.style.display = "none";
 
-    mainContent.style.display = 'none';
+  aboutPage.style.display = "block";
+}
 
-    aboutPage.style.display = 'block';
+function homePageActivate() {
+  mainContent.style.display = "block";
 
-};
-
-function homePageActivate(){
-
-    var mainContent = document.getElementById("home");
-    var aboutPage = document.getElementById("about-section");
-
-    mainContent.style.display = 'block';
-
-    aboutPage.style.display = 'none';
-
-};
-
+  aboutPage.style.display = "none";
+}
